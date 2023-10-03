@@ -1,0 +1,24 @@
+
+** what is Node **
+Node is not a language
+this is a server Environment
+Node js can connect with database
+code and syntax is very similar to javascript
+but not exactly same 
+Node js free,open-sopurce
+Node js use chrome's V8 engine to execute the code
+
+
+** Why node **
+Node js mostly used for Apis
+so we can connect the same database with web app, mobile app
+Node is easy to understand who knows javascript
+Node js is super fast for Apis
+with node and js , you can become full stack developer
+
+
+** History **
+first release 27 may 2009
+current version is  16.4
+
+
