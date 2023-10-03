@@ -1,0 +1,14 @@
+{
+  "name": "9_makesimple-api",
+  "version": "1.0.0",
+  "description": "Making a simple api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pradeep singroul",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
