@@ -1,0 +1,4 @@
+** fundamentals in Node js **
+- java scripts funcdamentals for Node js
+- conditions, loops, and Array
+- the import function and variable from another files
