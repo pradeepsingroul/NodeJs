@@ -1,0 +1,9 @@
+** Install and setup Node js **
+Download Node js
+Install Npm and Node 
+    check Node version in cmd : 18.somthinks
+list for recommended code editors
+    -subline
+    -atom
+    -vsCode
+    -webStorm
