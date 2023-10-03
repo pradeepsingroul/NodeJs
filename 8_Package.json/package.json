@@ -1,0 +1,23 @@
+{
+  "name": "8_package.json",
+  "version": "1.0.0",
+  "description": "first npm project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradeepsingroul/NodeJs.git"
+  },
+  "author": "Pradeep Singroul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pradeepsingroul/NodeJs/issues"
+  },
+  "homepage": "https://github.com/pradeepsingroul/NodeJs#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
+  }
+}
