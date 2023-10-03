@@ -1,0 +1,21 @@
+
+**client and server side **
+client ---request---> server ---response---> client
+   |                     |
+   |                     |
+   |                     |
+javascript            Node js
+HTml
+Css
+
+
+** how node js uses javascript internally **
+
+
+
+** what developers make with node js **
+developers makes apis with node js
+so we can connect to server and client
+Node can make an apis for web, Android and IOS etc;
+Node can also make websites
+
