@@ -1,0 +1,6 @@
+** core module **
+- what are the core modules : fs,Buffer,HTTP
+- what are global modules 
+- global model example 
+- Non global model with example
+- interview quesiton
