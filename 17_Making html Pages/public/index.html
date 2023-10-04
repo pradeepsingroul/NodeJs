@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        body{
+          
+          background-color:rgb(240, 243, 245);
+      }
+      
+      #navbar>div{
+          margin-left: 10px;
+      
+      }
+      #navbar>div:nth-child(1){
+          width: 18%;
+      }
+      #navbar>div:nth-child(1)>img{
+          width: 100%;
+          height: 100%;
+      }
+      #navbar{
+          display: flex;
+          height: 80px;
+          background-color: white;
+          width: 100%;
+      }
+      
+      #search{
+          display: flex;
+          width: 50%;
+          align-items: center;
+      }
+      #search>input{
+          border: none;
+          font-size: 22px;
+          background-color: rgb(238, 234, 229);
+          height: 60%;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          width: 80%;
+      }
+      #search>div{
+          display: flex;
+          align-items: center;
+          font-size: 30px;
+         color: white;
+         background-color: black;
+         height: 60%;
+         width: 20%;
+         border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+         
+      }
+      #login{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width:20% ;
+          
+         
+      }
+      #login>div>img{
+          height: 30px;
+          width: 30px;
+         
+      }
+      #login>a{
+          text-decoration: none;
+          font-size: 25px;
+          color: black;
+      }
+      #lowernav{
+          display: flex;
+          align-items: center;
+          width: 100%;
+         
+          height: 80px;
+          margin-top: 10px;
+      }
+      #lowernav>a{
+          background-color: rgb(244, 244, 238);
+          height: 30px;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 7%;
+          border-radius: 5px;
+          margin-left: 20px;
+          color: black;
+        
+          text-decoration: none;
+         
+      }
+      #lowernav>a:hover{
+          background-color: rgb(238, 196, 43);
+          cursor: pointer;
+          height: 40px;
+          width: 7%;
+          
+      }
+      #mainnavbar{
+         
+          width: 100%;
+          position: sticky;
+          background-color: white;
+          box-shadow: rgba(43, 43, 170, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          background-color: rgb(231, 228, 224);
+      }
+      #slidingimage{
+         
+          height: 450px;
+          width: 100%;
+          margin-top: 20px;
+          position: relative;
+      }
+      #slidingimage>button{
+          position: absolute;
+          top:50%;
+          font-size: 40px;
+          border-radius: 100%;
+          height: 50px;
+          width: 50px;
+          background-color : rgba(77, 77, 77, 0.5);
+      }
+      #slidingimage>button:nth-child(3){
+        right: 50px;
+      }
+      #slidingimage>button:nth-child(2){
+         left: 50px;
+      }
+      #slidingimage>img{
+          height: 100%;
+          width: 100%;
+         
+      }
+      
+      #referyourfrind{
+        
+          height: 390px;
+          width: 90%;
+          margin: auto;
+      }
+      #referyourfrind>img{
+          height: 100%;
+          width: 100%;
+      }
+      /* #referyourfrind+h2{
+          font-size: 34.8448px;
+          color: #1f1f1f;
+          text-align: center;
+      } */
+      h2{
+          font-size: 34.8448px;
+          color: #1f1f1f;
+          text-align: center;
+      }
+      #iframe{
+          
+          height: 500px;
+          width: 80%;
+          margin: auto;
+      }
+      #iframe>iframe{
+          height: 100%;
+          width: 100%;
+      }
+      #outercontainer{
+        
+          position: relative;
+         
+      }
+      #outercontainer>button{
+          position: absolute;
+        top:50%;
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        border-radius: 50%;
+        background-color:rgba(192, 237, 103, 0.5)
+      }
+      #outercontainer>button:nth-child(2){
+        left: 4%;
+      }
+      #outercontainer>button:nth-child(3){
+         right: 4%;
+      }
+      
+      #container{
+      
+          height: 500px;
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: auto;
+      }
+      #container>div{
+      
+          width: 15%;
+          padding: 0px 30px 10px 30px;
+          background-color: white;
+          box-shadow: rgba(174, 235, 77, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+         
+      }
+      #container>div>img{
+          height: 75%;
+          width: 100%;
+      }
+      #container>div>button{
+          width: 100%;
+          height: 40px;
+          margin-top: 15px;
+          border: none;
+          background-color: black;
+          color: white;
+      }
+      #container>div>p{
+          text-align: center;
+      }
+      
+      #sec_slidingimage{
+        
+          height: 450px;
+          width: 100%;
+          margin-top: 20px;
+          position: relative;
+      }
+      #sec_slidingimage>button{
+          position: absolute;
+          top: 50%;
+          font-size: 30px;
+          border-radius: 10px;
+          height: 40px;
+          width: 40px;
+          background-color: rgba(67, 217, 222, 0.2)
+      }
+      #sec_slidingimage>button:nth-child(3){
+        right: 50px;
+      }
+      #sec_slidingimage>button:nth-child(2){
+         left: 50px;
+      }
+      #sec_slidingimage>img{
+          height: 100%;
+          width: 100%;
+         
+      }
+      #container2{
+         
+          height: 450px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: auto;
+      }
+      #container2>div{
+         
+          width: 32%;
+          background-color: white;
+          padding: 0px 30px 10px 30px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+         
+      }
+      #container2>div>img{
+          height: 100%;
+          width: 100%;
+         
+      }
+      #container2>div>button{
+          width: 100%;
+          height: 30px;
+          margin-top: 15px;
+          border: none;
+          background-color: black;
+          color: white;
+      }
+      #outercontainer2{
+         
+          position: relative;
+      }
+      #outercontainer2>button{
+       position: absolute;
+        top:50%;
+       
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color:rgba(59, 236, 174,0.2)
+      }
+      #outercontainer2>button:nth-child(2){
+          left: 4%;
+      }
+      #outercontainer2>button:nth-child(3){
+          right: 4%;
+      }
+      #slidingimage5{
+          
+          height: 500px;
+          width: 100%;
+          margin-top: 20px;
+          position: relative;
+      }
+      #slidingimage5>button{
+          position: absolute;
+          top: 50%;
+          font-size: 30px;
+          border-radius: 50%;
+          height: 40px;
+          width: 40px;
+          margin-top: 15px;
+          background-color: rgba(65, 63, 66, 0.4);
+      }
+      #slidingimage5>button:nth-child(3){
+        right: 50px;
+      }
+      #slidingimage5>button:nth-child(2){
+         left: 50px;
+      }
+      #slidingimage5>img{
+          height: 100%;
+          width: 100%;
+      }
+      #outercontainer3{
+          
+          position: relative;
+      }
+      #outercontainer3>button{
+        position: absolute;
+        top:50%;
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color:rgba(192, 237, 103, 0.3)
+      }
+      
+      #outercontainer3>button:nth-child(2){
+        left: 4%;
+        
+      }
+      #outercontainer3>button:nth-child(3){
+        right: 4%;
+      }
+      
+      #container3{
+          height: 450px;
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: auto;
+      }
+      #container3>div{
+        
+        
+          width: 15%;
+          background-color: white;
+          padding: 0px 30px 10px 30px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+         
+      }
+      #container3>div>img{
+          height: 70%;
+          width: 100%;
+         
+      }
+      #container3>div>button{
+          width: 100%;
+          height: 30px;
+          border: none;
+          background-color: black;
+          color: white;
+          margin-top: 15px;
+      }
+      #container3>div>p{
+          text-align: center;
+          font-weight: bold;
+      }
+      #container3>div>div{
+        
+         height: auto;
+         width: 80%;
+         margin: auto;
+      }
+      span{
+          margin-left: 8px;
+          font-weight: bold;
+          color: green;
+      }
+      #container3>div>div>span:nth-child(3){
+          margin-left: 8px;
+          color: red;
+          
+      }
+      #container3>div>div>span:nth-child(2){
+          margin-left: 8px;
+          color: rgb(212, 13, 235);
+          
+      }
+      p{
+          font-weight: bold;
+      }
+      #this_or_that{
+         
+          height: 500px;
+          display: flex;
+          width: 90%;
+          justify-content: space-between;
+          margin: auto;
+      }
+      #this_or_that>img{
+          height: 100%;
+          width: 45%;
+      
+      
+      }
+      #just_in{
+        width: 98%;
+        margin: auto;
+          position: relative;
+      }
+      #just_in>button{
+       position: absolute;
+        top:50%;
+       
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color:rgba(243, 130, 31, 0.2)
+      }
+      
+      #just_in>button:nth-child(2){
+      
+        left: 4%;
+       
+      }
+      #just_in>button:nth-child(3){
+        
+         right: 4%;
+        
+      }
+      
+      #just_in_container{
+         
+          height: 450px;
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: auto;
+      }
+      #just_in_container>div{
+        
+          background-color: white;
+          width: 15%;
+          padding: 0px 30px 10px 30px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+         
+      }
+      #just_in_container>div>img{
+          height: 70%;
+          width: 100%;
+         
+      }
+      #just_in_container>div>button{
+          width: 100%;
+          height: 30px;
+          border: none;
+          background-color: black;
+          color: white;
+          margin-top: 15px;
+      }
+      #just_in_container>div>p{
+          text-align: center;
+          font-weight: bold;
+      }
+      #just_in_container>div>div{
+       
+         height: auto;
+         width: 80%;
+         margin: auto;
+         text-align: center;
+      }
+      
+      #just_in_container>div>div>span:nth-child(3){
+          margin-left: 8px;
+          color: red;
+          
+      }
+      #just_in_container>div>div>span:nth-child(2){
+          margin-left: 8px;
+          color: rgb(212, 13, 235);
+          
+      }
+      #sugar_beauty_blog_container{
+        
+          height: 450px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: auto;
+      }
+      #sugar_beauty_blog_container>div{
+         
+          width: 32%; 
+          background-color: white;
+          
+          padding: 0px 30px 10px 30px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+         
+      }
+      #sugar_beauty_blog_container>div>img{
+          height: 100%;
+          width: 100%;
+          
+         
+      }
+      
+      #sugar_beauty_blog{
+         width: 98%;
+         margin: auto;
+          position: relative;
+      }
+      #sugar_beauty_blog>button{
+       position: absolute;
+        top:50%;
+       
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color:rgba(214, 105, 196, 0.2)
+      }
+      #sugar_beauty_blog>button:nth-child(2){
+          left: 4%;
+      }
+      #sugar_beauty_blog>button:nth-child(3){
+          right: 4%;
+      }
+      
+      #explore_container{
+        
+        margin-top: -100px;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+      }
+      
+      #explore_container>div>img{
+      margin-top: -60px;
+        height: 100%;
+        
+        width: 100%;
+      }
+      
+      #explore{
+        position: relative;
+        width: 98%;
+        margin: auto;
+      }
+      #explore>button{
+      position: absolute;
+      top:50%;
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      border-radius: 10px;
+      background-color:rgba(26, 230, 97, 0.5)
+      }
+      #explore>button:nth-child(2){
+        left: 4%;
+      }
+      #explore>button:nth-child(3){
+        right: 4%;
+      }
+      button:hover{
+      cursor: pointer;
+      }
+      #copy1{
+      height: 450px;
+      margin-top: 40px;
+      width: 100%;
+      
+      }
+      #copy1>img{
+      height: 100%;
+      width:100%;
+      }
+      
+      #wishlist{
+      display: flex;
+      width: 8%;
+      align-items: center;
+      justify-content: space-around;
+      }
+      #wishlist>img{
+      height: 30px;
+      width:30px;     
+      }
+      #wishlist>a>img{
+      height: 30px;
+      width: 30px;
+      }
+      #wishlist>a>img:hover{
+      height: 40px;
+      width: 40px;
+      }
+      #explore+img{
+      width: 100%;
+      margin: auto;
+      }
+      #login>a:hover{
+        color: red;
+        font-size: 28px;
+      }
+    </style>
+</head>
+<body>
+    
+<div id="mainnavbar">
+        <div id="navbar">
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/pride-logo-option.gif" alt="">
+            </div>
+            <div id="search">
+                <input type="text" placeholder="search here">
+                <div>Search</div>
+            </div>
+            <div id="login">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" alt=""a>
+                </div>
+                <a href="login.html">login</a>/<a href="resister.html">Resister</a>
+            </div>
+            <div id="wishlist">
+            
+                <a href="wishlist.html"><img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/2x/external-wishlist-ecommerce-kiranshastry-solid-kiranshastry.png"  alt=""></a>
+                <a href="cart.html"><img src="https://cdn-icons-png.flaticon.com/128/253/253298.png" alt=""></a>
+                <img src="https://cdn-icons-png.flaticon.com/128/879/879859.png" alt="">
+          
+            </div>
+        </div>
+    <div id="lowernav">
+           
+            <a href="makeup.html"><div>MAKEUP</div></a>
+            <a href="brushes.html"><div>BRUSHES</div></a>
+            <a href="skincare.html"><div>SKINCARE</div></a>
+            <a href="tending.html"><div>TENDING</div></a>
+            <a href=""><div>BLOG</div></a>
+            <a href="products.html"><div>OFFERS</div></a>
+            <a href="store.html"> <div>STORE</div></a>
+         
+    </div>
+</div>
+    <div id="slidingimage">
+        <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/7d151892-4d17-466e-8a06-743392796264.jpg" alt="">
+        <button><</button>
+        <button>></button>
+    </div>
+    <h2>REFER YOUR FRIENDS</h2>
+
+    <div id="referyourfrind">
+        <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/8bfe8bb4-002d-4097-a773-6af33325a594.jpg" alt="">
+    </div>
+    <h2>AIR KISS POWDER LIPSTICK</h2>
+    <div id="iframe">
+        <iframe width="540" height="222" src="https://www.youtube.com/embed/VXMBlOqZJbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h2>BESTSELLERS</h2>
+    <div id="outercontainer">
+        <div id="container">
+          
+        </div>
+        <button><</button>
+        <button>></button>
+    </div>
+    <h2>QUICK BEAUTY TIPS WITH SUGAR</h2>
+    <div id="sec_slidingimage">
+        <img src="https://d32baadbbpueqt.cloudfront.net/fc27be93-0882-45d7-aef9-0ad461636eae.jpg" alt="">
+        <button><</button>
+        <button>></button>
+    </div>
+    <h2>HOT DEALS</h2>
+    <div id="outercontainer2">
+        <div id="container2">
+          
+        </div>
+        <button><</button>
+        <button>></button>
+    </div>
+    <h2>NEWLY LAUNCHED</h2>
+    <div id="slidingimage5">
+        <img src="" alt="">
+        <button><</button>
+        <button>></button>
+    </div>
+    <h2>SUPER STREAMING</h2>
+    <div id="copy1">
+        <img src="https://i.im.ge/2022/06/17/r4SNhJ.png" alt="">
+    </div>
+    <h2>GIFTING</h2>
+    <div id="outercontainer3">
+        <div id="container3">
+          
+        </div>
+        <button><</button>
+        <button>></button>
+    </div>
+    <h2>THIS OR THAT</h2>
+    <div id="this_or_that">
+        <img src="https://d32baadbbpueqt.cloudfront.net/87e180d8-98a5-44d4-88f2-4af24327cd7c.jpg" alt="">
+        <img src="https://d32baadbbpueqt.cloudfront.net/38a305ba-a808-4ade-ba72-fc55f5bc6183.jpg" alt="">
+    </div>
+    <h2>JUST IN</h2>
+    <div id="just_in">
+        <div id="just_in_container">
+          
+        </div>
+        <button><</button>
+        <button>></button>
+    </div>
+<h2>SUGAR BEAUTY BLOG</h2>
+    <div id="sugar_beauty_blog">
+        <div id="sugar_beauty_blog_container">
+          
+        </div>
+        <button><</button>
+        <button>></button>
+    </div>
+    <h2>EXPLORE</h2>
+    <div id="explore">
+        <div id="explore_container">
+          
+        </div>
+        <button><</button>
+        <button>></button>
+    </div>
+
+<img src="https://i.im.ge/2022/06/17/r4SPby.png" alt="">
+
+</body>
+</html>
