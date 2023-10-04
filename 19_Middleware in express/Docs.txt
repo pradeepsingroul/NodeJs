@@ -1,0 +1,9 @@
+** what is middle ware **
+middlewares are somethink which are used to filter the url or validation or authantication
+
+what are the type of the middlewares
+- Applocation level middlewares
+- Router lever middlewares
+- Error Handling middlewares
+- Built in middlewares
+- Third party middlewares
