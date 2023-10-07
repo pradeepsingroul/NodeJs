@@ -3,7 +3,7 @@ const {getConnection} = require("../dbConnection.js")
 const iseDeleteKaro = async (pehchan)=>{
     try {
         let con = await getConnection();
-        let data = await con.deleteOne(pehchan);
+        let data = await con.deleteMany();
         if(data.acknowledged && data.deletedCount>0){
             return "Data deleted succesfully"
         }else{
